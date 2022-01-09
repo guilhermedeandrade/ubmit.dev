@@ -10,7 +10,7 @@
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json|md)\"",
     "typecheck": "tsc -b",
-    "validate": "concurrently \"npm run lint --silent\" \"npm run typecheck --silent\" \"npm run build --silent\""
+    "validate": "./scripts/validate"
   },
   "dependencies": {
     "@remix-run/react": "^1.1.1",
