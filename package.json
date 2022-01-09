@@ -7,10 +7,11 @@
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "lint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json|md)\"",
     "typecheck": "tsc -b",
-    "validate": "./scripts/validate"
+    "validate": "scripts/validate",
+    "test": "jest"
   },
   "dependencies": {
     "@remix-run/react": "^1.1.1",
@@ -21,16 +22,27 @@
     "remix": "^1.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@guilhermedeandrade/prettier-config": "^1.0.0",
     "@remix-run/dev": "^1.1.1",
     "@remix-run/eslint-config": "^1.1.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "babel-jest": "^27.4.6",
     "concurrently": "^7.0.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.7",
     "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
     "typescript": "^4.1.2"
   },
   "engines": {

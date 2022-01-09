@@ -1,3 +1,7 @@
 {
-  "extends": ["@remix-run/eslint-config", "plugin:prettier/recommended"]
+  "extends": [
+    "@remix-run/eslint-config",
+    "@remix-run/eslint-config/jest",
+    "plugin:prettier/recommended"
+  ]
 }
