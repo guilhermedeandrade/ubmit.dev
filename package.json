@@ -7,7 +7,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx ."
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json)\""
   },
   "dependencies": {
     "@remix-run/react": "^1.1.1",
@@ -18,11 +19,15 @@
     "remix": "^1.1.1"
   },
   "devDependencies": {
+    "@guilhermedeandrade/prettier-config": "^1.0.0",
     "@remix-run/dev": "^1.1.1",
     "@remix-run/eslint-config": "^1.1.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
     "typescript": "^4.1.2"
   },
   "engines": {
